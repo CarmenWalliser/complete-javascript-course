@@ -21,10 +21,30 @@
 // console.log(typeof country);
 // console.log(typeof language);
 
-//let, const and var
-language = "Afrikaans";
-const country = "South Africa";
-const continent = "Gauteng";
-const isLand = false;
-isIsland = true;
-console.log(isIsland);
+// //let, const and var
+// language = "Afrikaans";
+// const country = "South Africa";
+// const continent = "Gauteng";
+// const isLand = false;
+// isIsland = true;
+// console.log(isIsland);
+
+//Basic Operators
+let population = population/2;
+console.log(population)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
