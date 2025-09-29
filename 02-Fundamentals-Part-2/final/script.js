@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 ///////////////////////////////////////
@@ -382,25 +382,24 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 GOOD LUCK 😀
 */
 
-/*
 const mark = {
-  fullName: 'Mark Miller',
+  fullName: "Mark Miller",
   mass: 78,
   height: 1.69,
   calcBMI: function () {
     this.bmi = this.mass / this.height ** 2;
     return this.bmi;
-  }
+  },
 };
 
 const john = {
-  fullName: 'John Smith',
+  fullName: "John Smith",
   mass: 92,
   height: 1.95,
   calcBMI: function () {
     this.bmi = this.mass / this.height ** 2;
     return this.bmi;
-  }
+  },
 };
 
 mark.calcBMI();
@@ -411,11 +410,14 @@ console.log(mark.bmi, john.bmi);
 // "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
 
 if (mark.bmi > john.bmi) {
-  console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
+  console.log(
+    `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`
+  );
 } else if (john.bmi > mark.bmi) {
-  console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
+  console.log(
+    `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`
+  );
 }
-
 
 ///////////////////////////////////////
 // Iteration: The for Loop
@@ -436,16 +438,15 @@ for (let rep = 1; rep <= 30; rep++) {
   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
 
-
 ///////////////////////////////////////
 // Looping Arrays, Breaking and Continuing
 const jonas = [
-  'Jonas',
-  'Schmedtmann',
+  "Jonas",
+  "Schmedtmann",
   2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
 ];
 const types = [];
 
@@ -475,30 +476,29 @@ for (let i = 0; i < years.length; i++) {
 console.log(ages);
 
 // continue and break
-console.log('--- ONLY STRINGS ---')
+console.log("--- ONLY STRINGS ---");
 for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] !== 'string') continue;
+  if (typeof jonas[i] !== "string") continue;
 
   console.log(jonas[i], typeof jonas[i]);
 }
 
-console.log('--- BREAK WITH NUMBER ---')
+console.log("--- BREAK WITH NUMBER ---");
 for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] === 'number') break;
+  if (typeof jonas[i] === "number") break;
 
   console.log(jonas[i], typeof jonas[i]);
 }
-
 
 ///////////////////////////////////////
 // Looping Backwards and Loops in Loops
 const jonas = [
-  'Jonas',
-  'Schmedtmann',
+  "Jonas",
+  "Schmedtmann",
   2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
 ];
 
 // 0, 1, ..., 4
@@ -515,7 +515,6 @@ for (let exercise = 1; exercise < 4; exercise++) {
     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♀️`);
   }
 }
-
 
 ///////////////////////////////////////
 // The while Loop
@@ -534,9 +533,8 @@ let dice = Math.trunc(Math.random() * 6) + 1;
 while (dice !== 6) {
   console.log(`You rolled a ${dice}`);
   dice = Math.trunc(Math.random() * 6) + 1;
-  if (dice === 6) console.log('Loop is about to end...');
+  if (dice === 6) console.log("Loop is about to end...");
 }
-*/
 
 ///////////////////////////////////////
 // Coding Challenge #4
@@ -560,10 +558,9 @@ HINT: Call calcTip in the loop and use the push method to add values to the tips
 GOOD LUCK 😀
 */
 
-/*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
+};
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
@@ -582,8 +579,7 @@ const calcAverage = function (arr) {
     sum += arr[i];
   }
   return sum / arr.length;
-}
+};
 console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
-*/
