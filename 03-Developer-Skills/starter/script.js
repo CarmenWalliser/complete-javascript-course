@@ -127,7 +127,8 @@ Given an array of forecasted maximum temperatures, the thermometer displays a st
 
 Example: [17, 21, 23] will print "... 17ºC in 1 days ... 21ºC in 2 days ... 23ºC in 3 days ..."
 
-Create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console.
+Create a function 'printForecast' which takes in an array 'arr' and logs a string like
+ the above to the console.
 
 Use the problem-solving framework: Understand the problem and break it up into sub-problems!
 
@@ -149,5 +150,15 @@ TEST DATA 2: [12, 5, -5, 0, 4]
 */
 const data1 = [17, 21, 23];
 const data2 = [12, 5, -5, 0, 4];
+// console.log(
+//   `...${data1[0]} ºC in 1 days ... ${data1[1]}ºC in 2 days ... ${data1[2]}C in 3 days ...`
+// );
 
-const printForecast = function (arr) {};
+const printForecast = function (arr) {
+  let str = " ";
+  for (let i = 0; i < arr.length; i++) {
+    str += `...${arr[i]}ºC in ${i + 1} days `;
+  }
+  console.log(str);
+};
+printForecast(data1);
