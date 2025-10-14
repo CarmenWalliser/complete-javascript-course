@@ -45,3 +45,11 @@ const restaurant = {
     },
   },
 };
+
+//mutating variables
+let a = 111;
+let b = 452;
+const obj = { a: 23, b: 7, c: 14 };
+
+({ a, b } = obj);
+console.log(a, b);

@@ -128,3 +128,10 @@ jessicaCopy.family.push('Mary');
 
 console.log('Before:', jessica);
 console.log('after', jessicaCopy);
+
+// deep copy
+const jessicaClone = structuredClone(jessica);
+jessicaCopy.family.push('Mary');
+
+console.log('Original', jessica);
+console.log('After clone', jessicaCopy);
